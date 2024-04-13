@@ -124,7 +124,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onPlayMatch() {
+
+        Log.i("POKER_COMBO_FINDER", "------\nPlayer combo:\n");
         Combo playerCombo = new Combo(tableCards, playerCards);
+        Log.i("POKER_COMBO_FINDER", "------\nComputer combo:\n");
         Combo computerCombo = new Combo(tableCards, computerCards);
 
         int bet = betBar.getProgress() * BetBarListener.PROGRESS_STEP;
